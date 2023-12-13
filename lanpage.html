@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width,initial-scale=1.0">
+    <title>Landing page</title>
+    <script src="lanpage.js"></script>
+    <style>
+
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+          
+        
+        .banner{
+             width:100%;
+             height: 100vh;
+             background: url(img/house.jpg);
+             background-size: cover;
+             background-position: center;
+
+        }
+        
+        nav{
+
+            height: 80px;
+            width: 100%;
+           
+        }
+        
+        .navbar{
+            width: 85%;
+            margin: auto;
+            padding: 35px 0;
+            justify-content: space-between;
+            align-items: center;
+            display: flex;
+            position:fixed;
+          
+        }
+       
+       
+        .navbar ul li{
+            padding-top: 30px;
+            padding-left: 30px;
+            list-style: none;
+            display: inline-block;
+            margin: 0 20px;
+            position: relative;
+        }
+        a{
+            text-decoration: none;
+            color: gold;
+            font-weight: 400;
+            
+        }
+       
+      .navbar ul li a:hover{
+
+         color:darkorange;
+
+      }
+
+      .navbar ul li::after{
+            content:'';
+            height: 3px;
+            width:0;
+            background: #009688;
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            transition:0.5s; 
+           
+      }.navbar ul li:hover::after{
+             width: 100%;
+
+      } 
+
+      .content{
+              width: 100%;
+              position: absolute;
+              top:50%;
+              transform:translateY(-50%);
+              text-align: center;
+              color: darkred;
+            
+      }
+
+      .content h1{
+
+          font-size: 70px;
+          margin-top: 80px;
+
+      }
+      .content p{
+         margin: 20px auto;
+         font-weight: 100;
+         line-height: 25px;
+      }
+      button{
+        width:200px;
+        padding: 15px 0;
+        text-align: center;
+        margin: 20px 10px;
+        border-radius: 25px;
+        font-weight: bold;
+        border: 2px solid #009688;
+        background: transparent;
+        color: #fff;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+      }
+    span{
+        background: #009688;
+        height: 100%;
+        width: 0;
+        border-radius: 25px;
+        position: absolute;
+        transition: .5s;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+     button:hover span{
+        width: 100%;
+     }
+     button:hover{
+        border: none;
+     }
+      h2{
+        
+        align-items: center;
+        padding-top: 30px;
+      }
+     ol li{
+
+        
+         padding: 20px;
+     }
+     .last{
+        display: flex;
+     }
+     .bgColor{
+      transition: all 1s;
+      background-color: black;
+      
+      border-bottom: 1px solid lightgray;
+      width: 100%;
+      height: 50px;
+     }
+
+    </style>
+</head>
+<body>
+      
+        <div class="banner">
+          <header>
+            <div id="navbar" class="navbar">
+                <nav>
+                   <ul>
+                     <li><a href="lanpage.html">Home</a></li>
+                     <li><a href="kitchen.html">Kitchen</a></li>
+                     <li><a href="Bedroom.html">Bedrooms</a></li>
+                     <li><a href="Apartment.html">Appartment</a></li>
+                     <li><a href="Dining.html">Dinings</a></li>
+                   </ul>
+               </nav>
+            </div>
+          </header>
+        
+             <div class="content">
+                  <h1>Design your House</h1>
+                  <p>SUBSCRIBE CODE ARTISTIC FOR MORE</p>
+                   <div>
+                        <button type="button"><span></span>WATCH MORE</button>
+                        <button type="button"><span></span>SUBSCRIBE</button>
+                   </div>
+             </div> 
+        </div>
+          <div>
+             <h2>HOME DESIGN</h2><br>
+
+              <img src="img/happy.jpg">
+             <ol>
+                 <li>Start with question: Why? Why are you building your dream home?</li>
+                  <li>A good brief will inform your design team on exactly what you 
+                    expect from them.
+                 </li>
+                  <li>What architectural style?Traditional or Contemporary?</li>
+                  <li>Set up a realistic budget for ypur self build - it will
+                    determine the whole design.
+                  </li>
+
+             </ol>
+              <div class="last">
+                <img src="img/awardsbg.jpg">
+               </div>
+          </div>
+</body>
+</html>
